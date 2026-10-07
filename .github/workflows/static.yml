@@ -1,43 +1,2698 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+<!DOCTYPE html>
+<html lang="en">
 
-on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
+<head>
+    <meta charset="UTF-8">
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+    <meta name="description"
+        content="Nimhara Agriflora Pvt Ltd – Premium flowers, roses, flower plants and agricultural products from Sri Lanka. Wholesale, retail, weddings, events and islandwide delivery.">
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+    <meta name="keywords"
+        content="Nimhara Agriflora, flowers Sri Lanka, roses Sri Lanka, Welimada flowers, Badulla flowers, wholesale flowers, flower plants, baby breath, gerbera, lilies">
 
-jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          # Upload entire repository
-          path: '.'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v5
+    <meta name="author" content="Nimhara Agriflora Pvt Ltd">
+
+    <title>Nimhara Agriflora | Where Every Bloom Tells a Story</title>
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         TOP ANNOUNCEMENT BAR
+    ====================================================== -->
+
+    <div class="top-bar">
+
+        <div class="top-bar-left">
+            <span>
+                <i class="fa-solid fa-leaf"></i>
+                Grown with love in Sri Lanka
+            </span>
+        </div>
+
+        <div class="top-bar-right">
+
+            <a href="tel:+94771143487">
+                <i class="fa-solid fa-phone"></i>
+                077 114 3487
+            </a>
+
+            <span class="separator">|</span>
+
+            <a href="mailto:nimharaagriflora@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                nimharaagriflora@gmail.com
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="main-header" id="mainHeader">
+
+        <div class="header-container">
+
+
+            <!-- LOGO -->
+
+            <a href="#home" class="brand">
+
+                <div class="brand-symbol">
+                    <i class="fa-solid fa-spa"></i>
+                </div>
+
+                <div class="brand-text">
+
+                    <span class="brand-name">
+                        NIMHARA
+                    </span>
+
+                    <span class="brand-subtitle">
+                        AGRIFLORA PVT LTD
+                    </span>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- NAVIGATION -->
+
+            <nav class="navigation" id="navigation">
+
+                <a href="#home" class="nav-link active">
+                    Home
+                </a>
+
+                <a href="#about" class="nav-link">
+                    Our Story
+                </a>
+
+                <a href="#flowers" class="nav-link">
+                    Flowers
+                </a>
+
+                <a href="#plants" class="nav-link">
+                    Plants
+                </a>
+
+                <a href="#services" class="nav-link">
+                    Services
+                </a>
+
+                <a href="#gallery" class="nav-link">
+                    Gallery
+                </a>
+
+                <a href="#contact" class="nav-link">
+                    Contact
+                </a>
+
+            </nav>
+
+
+
+            <!-- HEADER CTA -->
+
+            <a href="#enquiry" class="header-cta">
+
+                <span>Order Flowers</span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+
+            <!-- MOBILE MENU -->
+
+            <button class="mobile-menu"
+                id="mobileMenu"
+                aria-label="Open menu">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section class="hero" id="home">
+
+
+        <!-- Decorative flowers -->
+
+        <div class="hero-decoration hero-flower-1">
+            ✿
+        </div>
+
+        <div class="hero-decoration hero-flower-2">
+            ❀
+        </div>
+
+        <div class="hero-decoration hero-flower-3">
+            ✽
+        </div>
+
+
+
+        <div class="hero-overlay"></div>
+
+
+        <div class="hero-container">
+
+
+            <div class="hero-content">
+
+
+                <div class="hero-tag">
+
+                    <span class="tag-line"></span>
+
+                    <span>
+                        PREMIUM FLORAL COLLECTION
+                    </span>
+
+                    <span class="tag-line"></span>
+
+                </div>
+
+
+
+                <h1>
+
+                    Where Every
+
+                    <span class="gradient-text">
+                        Bloom
+                    </span>
+
+                    <br>
+
+                    Tells a Story.
+
+                </h1>
+
+
+
+                <p class="hero-text">
+
+                    Discover beautiful flowers, premium roses and
+                    thriving plants, lovingly cultivated and carefully
+                    selected in the highlands of Sri Lanka.
+
+                </p>
+
+
+
+                <div class="hero-buttons">
+
+                    <a href="#flowers"
+                        class="btn btn-primary">
+
+                        Explore Our Flowers
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+
+                    <a href="#about"
+                        class="btn btn-glass">
+
+                        Discover Nimhara
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- Hero mini stats -->
+
+                <div class="hero-stats">
+
+                    <div class="hero-stat">
+
+                        <strong>
+                            100%
+                        </strong>
+
+                        <span>
+                            Quality
+                        </span>
+
+                    </div>
+
+
+                    <div class="hero-stat">
+
+                        <strong>
+                            Fresh
+                        </strong>
+
+                        <span>
+                            Blooms
+                        </span>
+
+                    </div>
+
+
+                    <div class="hero-stat">
+
+                        <strong>
+                            Islandwide
+                        </strong>
+
+                        <span>
+                            Delivery
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- HERO VISUAL -->
+
+            <div class="hero-visual">
+
+
+                <div class="hero-image-frame">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1000&q=85"
+                        alt="Beautiful flowers">
+
+                </div>
+
+
+                <div class="hero-floating-card">
+
+                    <div class="floating-icon">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Grown with care
+                        </span>
+
+                        <strong>
+                            From Sri Lanka
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-flower-badge">
+
+                    <i class="fa-solid fa-spa"></i>
+
+                    <span>
+                        N
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Scroll -->
+
+        <div class="scroll-indicator">
+
+            <span>
+                SCROLL TO EXPLORE
+            </span>
+
+            <div class="scroll-arrow">
+                ↓
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         INTRODUCTION
+    ====================================================== -->
+
+    <section class="intro-section" id="about">
+
+        <div class="container">
+
+
+            <div class="intro-grid">
+
+
+                <!-- Image -->
+
+                <div class="intro-images">
+
+
+                    <div class="intro-main-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1495231916356-a86217efff12?auto=format&fit=crop&w=900&q=85"
+                            alt="Fresh flowers">
+
+                    </div>
+
+
+                    <div class="intro-small-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=600&q=85"
+                            alt="Pink roses">
+
+                    </div>
+
+
+                    <div class="experience-badge">
+
+                        <span class="badge-number">
+                            01
+                        </span>
+
+                        <span class="badge-text">
+                            BEAUTY<br>
+                            IN EVERY<br>
+                            BLOOM
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Text -->
+
+                <div class="intro-content">
+
+
+                    <div class="section-label">
+
+                        <span></span>
+
+                        OUR STORY
+
+                    </div>
+
+
+                    <h2>
+
+                        Nature's beauty,
+
+                        <em>
+                            beautifully
+                        </em>
+
+                        brought to you.
+
+                    </h2>
+
+
+                    <p class="lead">
+
+                        Welcome to Nimhara Agriflora Pvt Ltd —
+                        where passion for flowers meets the beauty
+                        of Sri Lanka's highlands.
+
+                    </p>
+
+
+                    <p>
+
+                        From carefully cultivated roses to delicate
+                        baby's breath and colourful seasonal blooms,
+                        we are dedicated to bringing fresh,
+                        beautiful flowers to homes, businesses,
+                        florists and events.
+
+                    </p>
+
+
+                    <p>
+
+                        Based in the beautiful agricultural region of
+                        Welimada, we are growing towards a future where
+                        Sri Lankan flowers reach customers both locally
+                        and internationally.
+
+                    </p>
+
+
+                    <a href="#contact"
+                        class="underlined-link">
+
+                        Learn more about Nimhara
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FLOWER COLLECTION
+    ====================================================== -->
+
+    <section class="collection-section" id="flowers">
+
+
+        <div class="container">
+
+
+            <div class="section-heading centered">
+
+
+                <div class="section-label">
+
+                    <span></span>
+
+                    OUR COLLECTION
+
+                    <span></span>
+
+                </div>
+
+
+                <h2>
+
+                    Flowers that make
+
+                    <em>
+                        moments memorable.
+                    </em>
+
+                </h2>
+
+
+                <p>
+
+                    From timeless roses to enchanting lilies,
+                    discover our collection of beautiful blooms.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- FILTERS -->
+
+            <div class="flower-filters">
+
+                <button
+                    class="flower-filter active"
+                    data-filter="all">
+
+                    All Flowers
+
+                </button>
+
+                <button
+                    class="flower-filter"
+                    data-filter="roses">
+
+                    Roses
+
+                </button>
+
+                <button
+                    class="flower-filter"
+                    data-filter="cut">
+
+                    Cut Flowers
+
+                </button>
+
+                <button
+                    class="flower-filter"
+                    data-filter="lilies">
+
+                    Lilies
+
+                </button>
+
+                <button
+                    class="flower-filter"
+                    data-filter="seasonal">
+
+                    Seasonal
+
+                </button>
+
+            </div>
+
+
+
+            <!-- FLOWER GRID -->
+
+            <div class="flower-grid">
+
+
+                <!-- ROSE -->
+
+                <article
+                    class="flower-card featured"
+                    data-category="roses">
+
+                    <div class="flower-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1496062031456-07b8f162a322?auto=format&fit=crop&w=1000&q=85"
+                            alt="Premium roses">
+
+                        <span class="flower-badge">
+                            BESTSELLER
+                        </span>
+
+                        <button
+                            class="quick-view"
+                            aria-label="View roses">
+
+                            <i class="fa-solid fa-expand"></i>
+
+                        </button>
+
+                    </div>
+
+                    <div class="flower-info">
+
+                        <span>
+                            ROSE COLLECTION
+                        </span>
+
+                        <h3>
+                            Premium Roses
+                        </h3>
+
+                        <p>
+                            Elegant roses in beautiful colours
+                            for every occasion.
+                        </p>
+
+                        <a href="#enquiry">
+                            Enquire
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- SPRAY ROSE -->
+
+                <article
+                    class="flower-card"
+                    data-category="roses">
+
+                    <div class="flower-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1518882605630-8ebf5b4f6b7b?auto=format&fit=crop&w=800&q=85"
+                            alt="Spray roses">
+
+                        <button
+                            class="quick-view">
+
+                            <i class="fa-solid fa-expand"></i>
+
+                        </button>
+
+                    </div>
+
+                    <div class="flower-info">
+
+                        <span>
+                            ROSES
+                        </span>
+
+                        <h3>
+                            Spray Roses
+                        </h3>
+
+                        <p>
+                            Delicate clusters of charming blooms.
+                        </p>
+
+                        <a href="#enquiry">
+                            Enquire
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- BABY BREATH -->
+
+                <article
+                    class="flower-card"
+                    data-category="cut">
+
+                    <div class="flower-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=800&q=85"
+                            alt="Baby's breath">
+
+                        <span class="flower-badge soft">
+                            FAVOURITE
+                        </span>
+
+                    </div>
+
+                    <div class="flower-info">
+
+                        <span>
+                            CUT FLOWERS
+                        </span>
+
+                        <h3>
+                            Baby's Breath
+                        </h3>
+
+                        <p>
+                            Soft, delicate blooms for elegant
+                            arrangements.
+                        </p>
+
+                        <a href="#enquiry">
+                            Enquire
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- GERBERA -->
+
+                <article
+                    class="flower-card"
+                    data-category="cut">
+
+                    <div class="flower-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=800&q=85"
+                            alt="Colourful flowers">
+
+                    </div>
+
+                    <div class="flower-info">
+
+                        <span>
+                            CUT FLOWERS
+                        </span>
+
+                        <h3>
+                            Gerbera
+                        </h3>
+
+                        <p>
+                            Bright, cheerful blooms in vibrant colours.
+                        </p>
+
+                        <a href="#enquiry">
+                            Enquire
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- LILY -->
+
+                <article
+                    class="flower-card"
+                    data-category="lilies">
+
+                    <div class="flower-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1597848212624-e19f6b0a6e6a?auto=format&fit=crop&w=800&q=85"
+                            alt="White lilies">
+
+                    </div>
+
+                    <div class="flower-info">
+
+                        <span>
+                            LILIES
+                        </span>
+
+                        <h3>
+                            Elegant Lilies
+                        </h3>
+
+                        <p>
+                            Sophisticated flowers for premium occasions.
+                        </p>
+
+                        <a href="#enquiry">
+                            Enquire
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- CHRYSANTHEMUM -->
+
+                <article
+                    class="flower-card"
+                    data-category="seasonal">
+
+                    <div class="flower-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=800&q=85"
+                            alt="Chrysanthemum flowers">
+
+                    </div>
+
+                    <div class="flower-info">
+
+                        <span>
+                            SEASONAL
+                        </span>
+
+                        <h3>
+                            Chrysanthemums
+                        </h3>
+
+                        <p>
+                            Selected varieties for florists and events.
+                        </p>
+
+                        <a href="#enquiry">
+                            Enquire
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- SNAPDRAGON -->
+
+                <article
+                    class="flower-card"
+                    data-category="seasonal">
+
+                    <div class="flower-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1468327768560-75b778cbb551?auto=format&fit=crop&w=800&q=85"
+                            alt="Seasonal flowers">
+
+                    </div>
+
+                    <div class="flower-info">
+
+                        <span>
+                            SEASONAL
+                        </span>
+
+                        <h3>
+                            Snapdragons
+                        </h3>
+
+                        <p>
+                            Elegant tall blooms for floral design.
+                        </p>
+
+                        <a href="#enquiry">
+                            Enquire
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- TIGER LILY -->
+
+                <article
+                    class="flower-card"
+                    data-category="lilies">
+
+                    <div class="flower-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=85"
+                            alt="Garden flowers">
+
+                    </div>
+
+                    <div class="flower-info">
+
+                        <span>
+                            LILIES
+                        </span>
+
+                        <h3>
+                            Tiger Lilies
+                        </h3>
+
+                        <p>
+                            Distinctive blooms with an unforgettable look.
+                        </p>
+
+                        <a href="#enquiry">
+                            Enquire
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <div class="collection-bottom">
+
+                <a href="#enquiry"
+                    class="btn btn-dark">
+
+                    View Availability
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         ROSE FEATURE
+    ====================================================== -->
+
+    <section class="rose-feature">
+
+
+        <div class="rose-feature-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1600&q=90"
+                alt="Beautiful rose">
+
+        </div>
+
+
+        <div class="rose-feature-overlay"></div>
+
+
+        <div class="rose-feature-content">
+
+
+            <div class="section-label light">
+
+                <span></span>
+
+                THE NIMHARA ROSE COLLECTION
+
+            </div>
+
+
+            <h2>
+
+                A rose
+
+                <em>
+                    for every
+                </em>
+
+                story.
+
+            </h2>
+
+
+            <p>
+
+                Red. White. Pink. Yellow. Peach.
+                Spray roses and more.
+
+            </p>
+
+
+            <div class="colour-pills">
+
+                <span>Red</span>
+                <span>White</span>
+                <span>Pink</span>
+                <span>Yellow</span>
+                <span>Peach</span>
+                <span>Spray</span>
+
+            </div>
+
+
+            <a href="#enquiry"
+                class="btn btn-white">
+
+                Request Rose Collection
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PLANTS
+    ====================================================== -->
+
+    <section class="plants-section" id="plants">
+
+
+        <div class="container">
+
+
+            <div class="plants-grid">
+
+
+                <div class="plants-content">
+
+
+                    <div class="section-label">
+
+                        <span></span>
+
+                        GROW WITH NIMHARA
+
+                    </div>
+
+
+                    <h2>
+
+                        Bring a little
+
+                        <em>
+                            garden magic
+                        </em>
+
+                        home.
+
+                    </h2>
+
+
+                    <p>
+
+                        Our collection isn't only about cut flowers.
+                        We also provide selected flower plants and
+                        agricultural planting materials for homes,
+                        gardens and commercial growers.
+
+                    </p>
+
+
+                    <div class="plant-list">
+
+
+                        <div class="plant-list-item">
+
+                            <span>
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Rose Plants
+                                </strong>
+
+                                <small>
+                                    Beautiful varieties for cultivation
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="plant-list-item">
+
+                            <span>
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Flower Plants
+                                </strong>
+
+                                <small>
+                                    Selected ornamental varieties
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="plant-list-item">
+
+                            <span>
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Vegetable Plants
+                                </strong>
+
+                                <small>
+                                    Suitable for home and commercial cultivation
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <a href="#enquiry"
+                        class="underlined-link">
+
+                        Ask about available plants
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+
+
+                <div class="plants-visual">
+
+
+                    <div class="plants-main-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1000&q=85"
+                            alt="Green plants">
+
+                    </div>
+
+
+                    <div class="plants-accent-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=600&q=85"
+                            alt="Potted plant">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SERVICES
+    ====================================================== -->
+
+    <section class="services-section" id="services">
+
+
+        <div class="container">
+
+
+            <div class="section-heading centered">
+
+
+                <div class="section-label">
+
+                    <span></span>
+
+                    WHAT WE OFFER
+
+                    <span></span>
+
+                </div>
+
+
+                <h2>
+
+                    More than flowers.
+
+                    <em>
+                        It's the Nimhara experience.
+                    </em>
+
+                </h2>
+
+
+            </div>
+
+
+
+            <div class="services-grid">
+
+
+                <article class="service-card">
+
+                    <div class="service-number">
+                        01
+                    </div>
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                    </div>
+
+                    <h3>
+                        Wholesale Supply
+                    </h3>
+
+                    <p>
+                        Bulk flowers for florists, shops,
+                        businesses and resellers.
+                    </p>
+
+                    <a href="#enquiry">
+                        Enquire
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </article>
+
+
+
+                <article class="service-card featured-service">
+
+                    <div class="service-number">
+                        02
+                    </div>
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <h3>
+                        Weddings & Events
+                    </h3>
+
+                    <p>
+                        Fresh flowers for weddings, celebrations,
+                        parties and special occasions.
+                    </p>
+
+                    <a href="#enquiry">
+                        Plan Your Flowers
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </article>
+
+
+
+                <article class="service-card">
+
+                    <div class="service-number">
+                        03
+                    </div>
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+
+                    <h3>
+                        Islandwide Delivery
+                    </h3>
+
+                    <p>
+                        Carefully packed flowers delivered
+                        across Sri Lanka.
+                    </p>
+
+                    <a href="#enquiry">
+                        Check Delivery
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </article>
+
+
+
+                <article class="service-card">
+
+                    <div class="service-number">
+                        04
+                    </div>
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+
+                    <h3>
+                        Flower Plants
+                    </h3>
+
+                    <p>
+                        Quality planting materials for home,
+                        garden and commercial growers.
+                    </p>
+
+                    <a href="#enquiry">
+                        Explore Plants
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </article>
+
+
+
+                <article class="service-card">
+
+                    <div class="service-number">
+                        05
+                    </div>
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-store"></i>
+                    </div>
+
+                    <h3>
+                        Retail Orders
+                    </h3>
+
+                    <p>
+                        Beautiful flowers for gifts, homes
+                        and personal celebrations.
+                    </p>
+
+                    <a href="#enquiry">
+                        Place an Order
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </article>
+
+
+
+                <article class="service-card">
+
+                    <div class="service-number">
+                        06
+                    </div>
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-earth-asia"></i>
+                    </div>
+
+                    <h3>
+                        Export Partnerships
+                    </h3>
+
+                    <p>
+                        Building trusted supply relationships
+                        for international flower markets.
+                    </p>
+
+                    <a href="#enquiry">
+                        Partner With Us
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         WHY NIMHARA
+    ====================================================== -->
+
+    <section class="why-section">
+
+
+        <div class="container">
+
+
+            <div class="why-grid">
+
+
+                <div class="why-title">
+
+
+                    <div class="section-label">
+
+                        <span></span>
+
+                        WHY NIMHARA
+
+                    </div>
+
+
+                    <h2>
+
+                        Grown with
+
+                        <em>
+                            passion.
+                        </em>
+
+                        Delivered with care.
+
+                    </h2>
+
+
+                    <p>
+
+                        Every flower has a journey.
+                        We want yours to arrive beautiful.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="why-feature">
+
+                    <div class="why-icon">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+
+                    <h3>
+                        Quality First
+                    </h3>
+
+                    <p>
+                        Carefully selected flowers and
+                        plants with attention to quality.
+                    </p>
+
+                </div>
+
+
+
+                <div class="why-feature">
+
+                    <div class="why-icon">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+
+                    <h3>
+                        Fresh & Natural
+                    </h3>
+
+                    <p>
+                        We value freshness, beauty and
+                        responsible cultivation.
+                    </p>
+
+                </div>
+
+
+
+                <div class="why-feature">
+
+                    <div class="why-icon">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                    </div>
+
+                    <h3>
+                        Personal Service
+                    </h3>
+
+                    <p>
+                        We work closely with our customers
+                        to understand their needs.
+                    </p>
+
+                </div>
+
+
+
+                <div class="why-feature">
+
+                    <div class="why-icon">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+
+                    <h3>
+                        Growing Globally
+                    </h3>
+
+                    <p>
+                        Building a Sri Lankan flower brand
+                        with international ambitions.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         WHOLESALE CTA
+    ====================================================== -->
+
+    <section class="wholesale-section">
+
+
+        <div class="wholesale-decoration">
+            ✿
+        </div>
+
+
+        <div class="container">
+
+
+            <div class="wholesale-content">
+
+
+                <div class="section-label light">
+
+                    <span></span>
+
+                    FOR FLORISTS & BUSINESSES
+
+                </div>
+
+
+                <h2>
+
+                    Looking for flowers
+
+                    <em>
+                        in bulk?
+                    </em>
+
+                </h2>
+
+
+                <p>
+
+                    Tell us the flower, quantity and delivery
+                    location. We'll help you find the right
+                    solution for your business.
+
+                </p>
+
+
+                <div class="wholesale-buttons">
+
+                    <a href="#enquiry"
+                        class="btn btn-white">
+
+                        Request a Wholesale Quote
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+
+                    <a href="https://wa.me/94771143487?text=Hello%20Nimhara%20Agriflora%2C%20I%20would%20like%20to%20make%20a%20wholesale%20flower%20enquiry."
+                        target="_blank"
+                        class="btn btn-whatsapp">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                        WhatsApp Us
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         GALLERY
+    ====================================================== -->
+
+    <section class="gallery-section" id="gallery">
+
+
+        <div class="container">
+
+
+            <div class="section-heading centered">
+
+
+                <div class="section-label">
+
+                    <span></span>
+
+                    OUR GALLERY
+
+                    <span></span>
+
+                </div>
+
+
+                <h2>
+
+                    A world of
+
+                    <em>
+                        colour & beauty.
+                    </em>
+
+                </h2>
+
+
+                <p>
+                    A glimpse into the world of Nimhara Agriflora.
+                </p>
+
+            </div>
+
+
+
+            <div class="gallery-grid">
+
+
+                <div class="gallery-item gallery-large">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1000&q=85"
+                        alt="Flower field">
+
+                    <div class="gallery-overlay">
+
+                        <span>
+                            OUR FLOWERS
+                        </span>
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="gallery-item">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1496062031456-07b8f162a322?auto=format&fit=crop&w=700&q=85"
+                        alt="Roses">
+
+                    <div class="gallery-overlay">
+
+                        <span>
+                            ROSES
+                        </span>
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="gallery-item">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=700&q=85"
+                        alt="Pink flowers">
+
+                    <div class="gallery-overlay">
+
+                        <span>
+                            BEAUTIFUL BLOOMS
+                        </span>
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="gallery-item">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=700&q=85"
+                        alt="Plants">
+
+                    <div class="gallery-overlay">
+
+                        <span>
+                            PLANTS
+                        </span>
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="gallery-item">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1518882605630-8ebf5b4f6b7b?auto=format&fit=crop&w=700&q=85"
+                        alt="Floral collection">
+
+                    <div class="gallery-overlay">
+
+                        <span>
+                            COLLECTION
+                        </span>
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PACKAGING
+    ====================================================== -->
+
+    <section class="packaging-section">
+
+
+        <div class="container">
+
+
+            <div class="packaging-grid">
+
+
+                <div class="packaging-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=1000&q=85"
+                        alt="Beautiful flower packaging">
+
+                    <div class="packaging-stamp">
+
+                        <i class="fa-solid fa-spa"></i>
+
+                        <span>
+                            NIMHARA
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="packaging-content">
+
+
+                    <div class="section-label">
+
+                        <span></span>
+
+                        PACKED WITH CARE
+
+                    </div>
+
+
+                    <h2>
+
+                        Beautiful flowers
+
+                        <em>
+                            deserve beautiful
+                            packaging.
+                        </em>
+
+                    </h2>
+
+
+                    <p>
+
+                        We believe the experience begins before
+                        the flowers even reach you.
+
+                    </p>
+
+
+                    <p>
+
+                        Our carefully designed packaging is intended
+                        to protect flowers during transportation while
+                        creating a recognisable Nimhara Agriflora
+                        experience.
+
+                    </p>
+
+
+                    <div class="packaging-points">
+
+
+                        <div>
+
+                            <i class="fa-solid fa-check"></i>
+
+                            <span>
+                                Protective packaging
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <i class="fa-solid fa-check"></i>
+
+                            <span>
+                                Professional presentation
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <i class="fa-solid fa-check"></i>
+
+                            <span>
+                                Brand recognition
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         ENQUIRY
+    ====================================================== -->
+
+    <section class="enquiry-section" id="enquiry">
+
+
+        <div class="container">
+
+
+            <div class="enquiry-wrapper">
+
+
+                <!-- CONTACT SIDE -->
+
+                <div class="enquiry-info">
+
+
+                    <div class="section-label light">
+
+                        <span></span>
+
+                        LET'S TALK FLOWERS
+
+                    </div>
+
+
+                    <h2>
+
+                        Tell us what
+
+                        <em>
+                            you're looking for.
+                        </em>
+
+                    </h2>
+
+
+                    <p>
+
+                        Whether you're planning a wedding,
+                        looking for wholesale flowers or simply
+                        want something beautiful — we'd love to
+                        hear from you.
+
+                    </p>
+
+
+
+                    <div class="contact-details">
+
+
+                        <a href="tel:+94771143487"
+                            class="contact-detail">
+
+                            <div class="contact-icon">
+
+                                <i class="fa-solid fa-phone"></i>
+
+                            </div>
+
+                            <div>
+
+                                <small>
+                                    CALL US
+                                </small>
+
+                                <strong>
+                                    077 114 3487
+                                </strong>
+
+                            </div>
+
+                        </a>
+
+
+
+                        <a href="https://wa.me/94771143487"
+                            target="_blank"
+                            class="contact-detail">
+
+                            <div class="contact-icon whatsapp-icon">
+
+                                <i class="fa-brands fa-whatsapp"></i>
+
+                            </div>
+
+                            <div>
+
+                                <small>
+                                    WHATSAPP
+                                </small>
+
+                                <strong>
+                                    +94 77 114 3487
+                                </strong>
+
+                            </div>
+
+                        </a>
+
+
+
+                        <a href="mailto:nimharaagriflora@gmail.com"
+                            class="contact-detail">
+
+                            <div class="contact-icon">
+
+                                <i class="fa-solid fa-envelope"></i>
+
+                            </div>
+
+                            <div>
+
+                                <small>
+                                    EMAIL
+                                </small>
+
+                                <strong>
+                                    nimharaagriflora@gmail.com
+                                </strong>
+
+                            </div>
+
+                        </a>
+
+
+
+                        <div class="contact-detail">
+
+                            <div class="contact-icon">
+
+                                <i class="fa-solid fa-location-dot"></i>
+
+                            </div>
+
+                            <div>
+
+                                <small>
+                                    LOCATION
+                                </small>
+
+                                <strong>
+                                    Welimada, Badulla, Sri Lanka
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FORM -->
+
+                <div class="enquiry-form-wrapper">
+
+
+                    <div class="form-header">
+
+                        <span>
+                            ✿
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Send an Enquiry
+                            </h3>
+
+                            <p>
+                                We'll get back to you soon.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <form id="enquiryForm">
+
+
+                        <div class="form-row">
+
+
+                            <div class="form-group">
+
+                                <label>
+                                    Your Name *
+                                </label>
+
+                                <input
+                                    type="text"
+                                    name="name"
+                                    placeholder="Enter your name"
+                                    required>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label>
+                                    Phone Number *
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    name="phone"
+                                    placeholder="077 123 4567"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="form-row">
+
+
+                            <div class="form-group">
+
+                                <label>
+                                    Email
+                                </label>
+
+                                <input
+                                    type="email"
+                                    name="email"
+                                    placeholder="your@email.com">
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label>
+                                    Location
+                                </label>
+
+                                <input
+                                    type="text"
+                                    name="location"
+                                    placeholder="Delivery location">
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="form-row">
+
+
+                            <div class="form-group">
+
+                                <label>
+                                    What are you looking for?
+                                </label>
+
+                                <select name="product">
+
+                                    <option value="">
+                                        Select a category
+                                    </option>
+
+                                    <option>
+                                        Roses
+                                    </option>
+
+                                    <option>
+                                        Spray Roses
+                                    </option>
+
+                                    <option>
+                                        Baby's Breath
+                                    </option>
+
+                                    <option>
+                                        Gerbera
+                                    </option>
+
+                                    <option>
+                                        Lilies
+                                    </option>
+
+                                    <option>
+                                        Chrysanthemums
+                                    </option>
+
+                                    <option>
+                                        Snapdragons
+                                    </option>
+
+                                    <option>
+                                        Flower Plants
+                                    </option>
+
+                                    <option>
+                                        Wholesale Flowers
+                                    </option>
+
+                                    <option>
+                                        Wedding / Event Flowers
+                                    </option>
+
+                                    <option>
+                                        Export Supply
+                                    </option>
+
+                                    <option>
+                                        Other
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label>
+                                    Quantity
+                                </label>
+
+                                <input
+                                    type="text"
+                                    name="quantity"
+                                    placeholder="e.g. 500 stems">
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Your Message
+                            </label>
+
+                            <textarea
+                                name="message"
+                                rows="5"
+                                placeholder="Tell us what you need..."></textarea>
+
+                        </div>
+
+
+
+                        <button
+                            type="submit"
+                            class="form-submit">
+
+                            Send Enquiry
+
+                            <i class="fa-solid fa-paper-plane"></i>
+
+                        </button>
+
+
+                        <p class="form-note">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            Your information is only used to respond
+                            to your enquiry.
+
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FINAL CTA
+    ====================================================== -->
+
+    <section class="final-cta">
+
+
+        <div class="final-cta-flower">
+            ❀
+        </div>
+
+
+        <div class="container">
+
+
+            <div class="final-cta-content">
+
+
+                <div class="brand-symbol large">
+                    <i class="fa-solid fa-spa"></i>
+                </div>
+
+
+                <p class="final-small">
+                    NIMHARA AGRIFLORA PVT LTD
+                </p>
+
+
+                <h2>
+
+                    Let's make something
+
+                    <em>
+                        beautiful bloom.
+                    </em>
+
+                </h2>
+
+
+                <p>
+
+                    Premium flowers • Beautiful plants •
+                    Sri Lankan grown
+
+                </p>
+
+
+                <div class="final-buttons">
+
+
+                    <a href="https://wa.me/94771143487?text=Hello%20Nimhara%20Agriflora%2C%20I%20would%20like%20to%20make%20an%20enquiry."
+                        target="_blank"
+                        class="btn btn-whatsapp">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                        WhatsApp Us
+
+                    </a>
+
+
+                    <a href="tel:+94771143487"
+                        class="btn btn-outline-light">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        077 114 3487
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+
+        <div class="container">
+
+
+            <div class="footer-grid">
+
+
+                <!-- BRAND -->
+
+                <div class="footer-brand">
+
+
+                    <a href="#home" class="brand footer-logo">
+
+                        <div class="brand-symbol">
+                            <i class="fa-solid fa-spa"></i>
+                        </div>
+
+                        <div class="brand-text">
+
+                            <span class="brand-name">
+                                NIMHARA
+                            </span>
+
+                            <span class="brand-subtitle">
+                                AGRIFLORA PVT LTD
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                    <p>
+
+                        Bringing the beauty of Sri Lankan flowers
+                        to homes, businesses and celebrations.
+
+                    </p>
+
+
+                    <div class="social-links">
+
+
+                        <a href="#"
+                            aria-label="Facebook">
+
+                            <i class="fa-brands fa-facebook-f"></i>
+
+                        </a>
+
+
+                        <a href="#"
+                            aria-label="Instagram">
+
+                            <i class="fa-brands fa-instagram"></i>
+
+                        </a>
+
+
+                        <a href="https://wa.me/94771143487"
+                            target="_blank"
+                            aria-label="WhatsApp">
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- QUICK LINKS -->
+
+                <div class="footer-column">
+
+                    <h4>
+                        Explore
+                    </h4>
+
+                    <a href="#about">
+                        Our Story
+                    </a>
+
+                    <a href="#flowers">
+                        Flowers
+                    </a>
+
+                    <a href="#plants">
+                        Plants
+                    </a>
+
+                    <a href="#services">
+                        Services
+                    </a>
+
+                    <a href="#gallery">
+                        Gallery
+                    </a>
+
+                </div>
+
+
+
+                <!-- SERVICES -->
+
+                <div class="footer-column">
+
+                    <h4>
+                        Services
+                    </h4>
+
+                    <a href="#services">
+                        Wholesale
+                    </a>
+
+                    <a href="#services">
+                        Weddings & Events
+                    </a>
+
+                    <a href="#services">
+                        Retail Orders
+                    </a>
+
+                    <a href="#services">
+                        Islandwide Delivery
+                    </a>
+
+                    <a href="#services">
+                        Export Supply
+                    </a>
+
+                </div>
+
+
+
+                <!-- CONTACT -->
+
+                <div class="footer-column contact-column">
+
+                    <h4>
+                        Contact
+                    </h4>
+
+
+                    <a href="tel:+94771143487">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        077 114 3487
+
+                    </a>
+
+
+                    <a href="mailto:nimharaagriflora@gmail.com">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        nimharaagriflora@gmail.com
+
+                    </a>
+
+
+                    <span>
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        Welimada, Badulla,<br>
+                        Sri Lanka
+
+                    </span>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FOOTER BOTTOM -->
+
+            <div class="footer-bottom">
+
+
+                <p>
+
+                    © <span id="currentYear"></span>
+                    Nimhara Agriflora Pvt Ltd.
+                    All rights reserved.
+
+                </p>
+
+
+                <p>
+
+                    Grown with
+
+                    <span class="heart">
+                        ♥
+                    </span>
+
+                    in Sri Lanka
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         WHATSAPP FLOAT
+    ====================================================== -->
+
+    <a href="https://wa.me/94771143487"
+        class="whatsapp-floating"
+        target="_blank"
+        aria-label="Chat on WhatsApp">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+        <span>
+            Chat with us
+        </span>
+
+    </a>
+
+
+
+    <!-- =====================================================
+         BACK TO TOP
+    ====================================================== -->
+
+    <button
+        class="back-to-top"
+        id="backToTop"
+        aria-label="Back to top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+
+
+    <!-- =====================================================
+         GALLERY LIGHTBOX
+    ====================================================== -->
+
+    <div class="lightbox"
+        id="lightbox">
+
+        <button
+            class="lightbox-close"
+            id="lightboxClose">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+
+        <img
+            id="lightboxImage"
+            src=""
+            alt="Nimhara Agriflora gallery">
+
+    </div>
+
+
+
+    <!-- =====================================================
+         SUCCESS MESSAGE
+    ====================================================== -->
+
+    <div class="success-message"
+        id="successMessage">
+
+        <div class="success-icon">
+
+            <i class="fa-solid fa-check"></i>
+
+        </div>
+
+        <div>
+
+            <strong>
+                Thank you!
+            </strong>
+
+            <span>
+                Your enquiry has been received.
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
